@@ -1,4 +1,4 @@
 package com.company;
 
-public class IRate {
+public interface IRate {
 }
