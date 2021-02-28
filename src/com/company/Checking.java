@@ -5,7 +5,8 @@ public class Checking extends Account{
     //TODO: list properties specific to cheking accounts
 
     //constructor: initialize checking account properties
-    public Checking(){
+    public Checking(String name){
+        super(name);
         System.out.println("NEW CHECKING ACCOUNT");
     }
 
