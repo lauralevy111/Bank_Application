@@ -7,6 +7,7 @@ public class Savings extends Account{
     //constructor : initialize settings for the savings properties
     public Savings(String name){
         super(name);
+        System.out.println("**NEW SAVINGS ACCOUNT");
     }
 
     //TODO: list any methods specific to savings accounts
