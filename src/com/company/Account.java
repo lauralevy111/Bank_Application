@@ -1,10 +1,8 @@
 package com.company;
 
 public abstract class Account implements IRate {
-
+    //list common properties for savings and checking acccounts.
     public String name;
-
-    //TODO: list commoon properties for savings and checking acccounts.
 
     //constructor: setbase properties and initialize the account
     public Account (String name) {
