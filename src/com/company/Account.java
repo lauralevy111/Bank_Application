@@ -16,10 +16,7 @@ public abstract class Account implements IRate {
         this.sSN = sSN;
         balance = initDeposit;
 
-        System.out.println("NEW ACCOUNT " +
-                "\n*NAME: "+ this.name +
-                "\n*SSN: " + this.sSN +
-                "\n*BAL: " + this.balance);
+
 
         //SET ACCOUNT NUMBER
         index++;
@@ -37,5 +34,12 @@ public abstract class Account implements IRate {
 
         return lastTwoOfSSN+uniqueID+randomNumber;
 
+    }
+
+    public void showInfo(){
+        System.out.println("NEW ACCOUNT " +
+                "\n*NAME: "+ name +
+                "\n*ACCOUNT NUMBER: " + accountNumber +
+                "\n*BALANCE: " + balance);
     }
 }
