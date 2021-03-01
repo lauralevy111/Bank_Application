@@ -1,6 +1,6 @@
 package com.company;
 
-public abstract class Account implements IRate {
+public abstract class Account implements IBaseRate {
     //list common properties for savings and checking accounts.
     public String name;
     public String sSN;
@@ -16,13 +16,15 @@ public abstract class Account implements IRate {
         this.sSN = sSN;
         balance = initDeposit;
 
-
-
         //SET ACCOUNT NUMBER
         index++;
         this.accountNumber = setAccountNumber();
 
+        setRate();
     }
+
+    public abstract void setRate();
+
     private String setAccountNumber(){
         int start = sSN.length()-2;
         int end = sSN.length();
@@ -40,6 +42,7 @@ public abstract class Account implements IRate {
         System.out.println("NEW ACCOUNT " +
                 "\n*NAME: "+ name +
                 "\n*ACCOUNT NUMBER: " + accountNumber +
-                "\n*BALANCE: " + balance);
+                "\n*BALANCE: " + balance +
+                "\n*RATE: " + rate + "%");
     }
 }
