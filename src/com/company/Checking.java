@@ -2,7 +2,9 @@ package com.company;
 
 public class Checking extends Account{
 
-    //TODO: list properties specific to cheking accounts
+    //list properties specific to cheking accounts
+    public int debitCardNumber;
+    public int debitCardPIN;
 
     //constructor: initialize checking account properties
     public Checking(String name){
