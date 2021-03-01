@@ -9,6 +9,10 @@ public class Savings extends Account{
     //constructor : initialize settings for the savings properties
     public Savings(String name, String sSN, int initDeposit){
         super(name, sSN, initDeposit);
+
+        accountNumber = "1" + accountNumber;
+        System.out.println("*ACCOUNT NUMBER: " + this.accountNumber);
+
         System.out.println("**NEW SAVINGS ACCOUNT");
     }
 

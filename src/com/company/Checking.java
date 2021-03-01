@@ -9,6 +9,10 @@ public class Checking extends Account{
     //constructor: initialize checking account properties
     public Checking(String name, String sSN, int initDeposit){
         super(name, sSN, initDeposit);
+
+        accountNumber = "2" + accountNumber;
+        System.out.println("*ACCOUNT NUMBER: " + this.accountNumber);
+
         System.out.println("**NEW CHECKING ACCOUNT");
     }
 
