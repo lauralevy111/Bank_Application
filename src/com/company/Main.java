@@ -10,6 +10,10 @@ public class Main {
         savingsAccount1.showInfo();
         checkingAccount1.showInfo();
 
+        savingsAccount1.deposit(5000);
+        savingsAccount1.withdraw(300);
+        savingsAccount1.transfer("brokerage",3000);
+
 
         //TODO: Read a csv file then create new accounts based on that data
     }
