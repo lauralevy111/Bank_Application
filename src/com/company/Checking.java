@@ -7,8 +7,8 @@ public class Checking extends Account{
     public int debitCardPIN;
 
     //constructor: initialize checking account properties
-    public Checking(String name, String sSN, int balance){
-        super(name, sSN, balance);
+    public Checking(String name, String sSN, int initDeposit){
+        super(name, sSN, initDeposit);
         System.out.println("**NEW CHECKING ACCOUNT");
     }
 
