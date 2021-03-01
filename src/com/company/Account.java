@@ -10,11 +10,12 @@ public abstract class Account implements IRate {
     public double rate;
 
     //constructor: setbase properties and initialize the account
-    public Account (String name) {
+    public Account (String name, String sSN, int balance) {
         this.name = name;
-
+        this.sSN = sSN;
+        this.balance = balance;
         System.out.println("NEW ACCOUNT " +
-                "\n*NAME: "+ this.name);
+                "\n*NAME: "+ this.name );
 
     }
 
