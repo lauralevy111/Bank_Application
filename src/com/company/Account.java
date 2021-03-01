@@ -38,6 +38,12 @@ public abstract class Account implements IBaseRate {
 
     }
 
+    //list common methods
+
+    public void deposit(){
+        
+    }
+
     public void showInfo(){
         System.out.println("NEW ACCOUNT " +
                 "\n*NAME: "+ name +
