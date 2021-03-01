@@ -41,7 +41,13 @@ public abstract class Account implements IBaseRate {
     //list common methods
 
     public void deposit(){
-        
+
+    }
+    public void withdraw(){
+
+    }
+    public void transfer(){
+
     }
 
     public void showInfo(){
