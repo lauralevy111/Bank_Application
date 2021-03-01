@@ -20,7 +20,16 @@ public abstract class Account implements IRate {
                 "\n*SSN: " + this.sSN +
                 "\n*BAL: " + this.balance);
 
-    }
+        //SET ACCOUNT NUMBER
+        this.accountNumber = setAccountNumber();
 
-    //TODO: List common methods
+    }
+    private String setAccountNumber(){
+        int start = sSN.length()-2;
+        int end = sSN.length();
+        String lastTwoOfSSN = sSN.substring(start,end);
+
+        return lastTwoOfSSN;
+
+    }
 }
