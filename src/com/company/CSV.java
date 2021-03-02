@@ -12,10 +12,16 @@ public class CSV {
     //function that reads data from CSV file & returns a list
     public static List<String[]> read(String filePath) {
         List<String[]> data = new LinkedList<String []>();
+        String dataRow;
 
         try {
             BufferedReader br = new BufferedReader(new FileReader(filePath));
-            String dataRow = br.readLine();
+
+            while((dataRow = br.readLine() )!=null);
+            {
+                String[] dataRecords = dataRow.split(",");
+                data.add(dataRecords);
+            }
 
         } catch(FileNotFoundException e) {
             System.out.println("COULD NOT FIND THE FILE");
