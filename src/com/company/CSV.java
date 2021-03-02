@@ -30,6 +30,8 @@ public class CSV {
             System.out.println("COULD NOT READ THE FILE");
             e.printStackTrace();
         }
+
+        return data;
     }
 
 }
