@@ -7,8 +7,6 @@ public class Main {
         Checking checkingAccount1 = new Checking("Celine Dion","1234567890",1550);
         Savings savingsAccount1 = new Savings("Gloria Steinem","2341233567",34000);
 
-        savingsAccount1.compound();
-
         savingsAccount1.showInfo();
         checkingAccount1.showInfo();
 
