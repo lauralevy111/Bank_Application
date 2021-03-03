@@ -1,19 +1,14 @@
 package com.company;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        /*
-        Checking checkingAccount1 = new Checking("Celine Dion","1234567890",1550);
-        Savings savingsAccount1 = new Savings("Gloria Steinem","2341233567",34000);
+        List<Account> accounts = new LinkedList<Account>();
 
-        savingsAccount1.showInfo();
-        checkingAccount1.showInfo();
-
-         */
 
         // Read a csv file then create new accounts based on that data
         String filePath ="/Users/lauralevy/IdeaProjects/Bank_Application/data/NewBankAccounts_202003020954";
