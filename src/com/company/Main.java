@@ -9,8 +9,6 @@ public class Main {
 
         List<Account> accounts = new LinkedList<Account>();
 
-
-
         // Read a csv file then create new accounts based on that data
         String filePath ="/Users/lauralevy/IdeaProjects/Bank_Application/data/NewBankAccounts_202003020954";
         List<String[]> newAccountHolders = CSV.read(filePath);
@@ -32,5 +30,6 @@ public class Main {
                 System.out.println("ERROR READING ACCOUNT TYPE");
             }
         }
+        accounts.get(5).showInfo();
     }
 }
