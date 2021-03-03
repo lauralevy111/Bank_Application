@@ -10,6 +10,7 @@ public class Main {
         List<Account> accounts = new LinkedList<Account>();
 
 
+
         // Read a csv file then create new accounts based on that data
         String filePath ="/Users/lauralevy/IdeaProjects/Bank_Application/data/NewBankAccounts_202003020954";
         List<String[]> newAccountHolders = CSV.read(filePath);
@@ -24,9 +25,13 @@ public class Main {
 
             if(accountType.equals("Savings")) {
                 System.out.println("OPEN A SAVINGS ACCOUNT");
+
+                accounts.add(new Savings(name, sSN, initDeposit));
             }
             else if(accountType.equals("Checking")){
-                System.out.println("OPEN A SAVINGS ACCOUNT");
+                System.out.println("OPEN A CHECKING ACCOUNT");
+                accounts.add(new Checking(name, sSN, initDeposit));
+
             }
             else{
                 System.out.println("ERROR READING ACCOUNT TYPE");
