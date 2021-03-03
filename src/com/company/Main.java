@@ -21,15 +21,10 @@ public class Main {
             String accountType = accountHolder[2];
             int initDeposit = Integer.parseInt(accountHolder[3]);
 
-            System.out.println("-" + name + " " + sSN + " " + accountType + " $"+ initDeposit);
-
             if(accountType.equals("Savings")) {
-                System.out.println("OPEN A SAVINGS ACCOUNT");
-
                 accounts.add(new Savings(name, sSN, initDeposit));
             }
             else if(accountType.equals("Checking")){
-                System.out.println("OPEN A CHECKING ACCOUNT");
                 accounts.add(new Checking(name, sSN, initDeposit));
 
             }
