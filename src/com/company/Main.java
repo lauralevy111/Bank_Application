@@ -31,5 +31,10 @@ public class Main {
             }
         }
         accounts.get(5).showInfo();
+
+        for(Account acc: accounts){
+            System.out.println("*********************");
+            acc.showInfo();
+        }
     }
 }
