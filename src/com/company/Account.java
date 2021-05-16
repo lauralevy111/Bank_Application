@@ -34,7 +34,7 @@ public abstract class Account implements IBaseRate {
 
         int randomNumber =(int) ( Math.random() * Math.pow(10,3));
 
-        return lastTwoOfSSN+uniqueID+randomNumberr;
+        return lastTwoOfSSN+uniqueID+randomNumber;
 
     }
 
