@@ -10,7 +10,6 @@ public class Savings extends Account{
     public Savings(String name, String sSN, int initDeposit){
         super(name, sSN, initDeposit);
         accountNumber = "2" + accountNumber;
-        accountNumber = "2" + accountNumber;
         setSafetyDepositBox();
 
     }
