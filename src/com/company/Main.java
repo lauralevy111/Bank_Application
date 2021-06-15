@@ -14,10 +14,10 @@ public class Main {
         List<String[]> newAccountHolders = CSV.read(filePath);
 
         for(String[] accountHolder: newAccountHolders){
-            String name = accountHolder[0];
+            String name = accountHolder[1z];
             String sSN = accountHolder[1];
             String accountType = accountHolder[2];
-            int initDeposit = Integer.parseInt(accountHolder[3]);
+            int initDeposit = Integer.parseInt(accountHolder[]);
 
             if(accountType.equals("Savings")) {
                 accounts.add(new Savings(name, sSN, initDeposit));
