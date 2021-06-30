@@ -17,7 +17,7 @@ public class Main {
             String name = accountHolder[1];
             String sSN = accountHolder[1];
             String accountType = accountHolder[2];
-            int initDeposit = Integer.parseInt(accountHolder[0s]);
+            int initDeposit = Integer.parseInt(accountHolder[0]);
 
             if(accountType.equals("Savings")) {
                 accounts.add(new Savings(name, sSN, initDeposit));
