@@ -11,6 +11,7 @@ public class Main {
 
         // Read a csv file then create new accounts based on that data
         String filePath ="/Users/lauralevy/IdeaProjects/Bank_Application/data/NewBankAccounts_202107061022";
+        String filePath2 ="/Users/lauralevy/IdeaProjects/Bank_Application/data/NewBankAccounts_202107071022";
         List<String[]> newAccountHolders = CSV.read(filePath);
 
         for(String[] accountHolder: newAccountHolders){
