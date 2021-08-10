@@ -33,7 +33,7 @@ public class Main {
             }
             else{
                 System.out.println("ERROR READING ACCOUNT TYPE");
-                #error case
+                //error case
             }
         }
 
