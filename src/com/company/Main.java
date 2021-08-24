@@ -31,7 +31,8 @@ public class Main {
                 accounts.add(new Checking(name, sSN, initDeposit));
 
             }
-            else{                //error case
+            else{
+                //error case
                 System.out.println("ERROR READING ACCOUNT TYPE");
             }
         }
