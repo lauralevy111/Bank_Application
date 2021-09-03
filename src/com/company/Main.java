@@ -38,7 +38,7 @@ public class Main {
         }
 
         for(Account acc: accounts){
-            System.out.println("*****s***********");
+            System.out.println("****************");
             acc.showInfo();
         }
 
