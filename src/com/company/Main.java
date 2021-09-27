@@ -10,7 +10,7 @@ public class Main {
         List<Account> accounts = new LinkedList<Account>();
 
         // Read a csv file then create new accounts based on that data
-        String filePath ="/Users/lauralevy/IdeaProjects/Bank_Application/data/NewBankAccounts_202107061022";
+        String filePath ="/Users/lauralevy/IdeaProjects/Bank_Application/data/NewBankAccounts_202109270645";
         //String filePath2 ="/Users/lauralevy/IdeaProjects/Bank_Application/data/NewBankAccounts_202107071022";
         List<String[]> newAccountHolders = CSV.read(filePath);
         //List<String[]> newAccountHolders2 = CSV.read(filePath2);
