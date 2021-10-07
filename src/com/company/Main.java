@@ -14,6 +14,7 @@ public class Main {
         //String filePath2 ="/Users/lauralevy/IdeaProjects/Bank_Application/data/NewBankAccounts_202107071022";
         List<String[]> newAccountHolders = CSV.read(filePath);
         for(Account account:accounts){
+            //todo: modify 
             account.showInfo();
         }
 
