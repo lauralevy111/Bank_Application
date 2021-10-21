@@ -29,7 +29,7 @@ public class Main {
         for(String[] accountHolder: newAccountHolders){
             String name = accountHolder[1];
             String sSN = accountHolder[1];
-            String accountType = accountHolder[2];
+            String accountType = accountHolder[1];
             int initDeposit = Integer.parseInt(accountHolder[0]);
 
             if(accountType.equals("Savings")) {
