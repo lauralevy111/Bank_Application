@@ -30,6 +30,7 @@ public class Main {
             String name = accountHolder[1];
             String sSN = accountHolder[1];
             String accountType = accountHolder[1];
+
             int initDeposit = Integer.parseInt(accountHolder[0]);
 
             if(accountType.equals("Savings")) {
